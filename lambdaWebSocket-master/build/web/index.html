@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket Chat</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <section id="card">
+            <p>El fondo de aqu&iacute; cambiar&aacute; cuando te corresponda o no estar dentro de la colecci&oacute;n</p>
+        </section>
+        <aside>
+            <div id="messageBox">
+                <form id="myForm" name="myForm" onsubmit="sendMessage(event)">
+                    <fieldset id="myFieldSet">
+                        <p>
+                            <label for="givenName">Given name:</label>
+                            <input type="text" id="givenName" required>
+                        </p>
+                        <p>
+                            <label for="surname">Surname:</label>
+                            <input type="text" id="surname" required>
+                        </p>
+                        <p>
+                            <label for="age">Age:</label>
+                            <input type="number" name="age" id="age" min="1" max="99" required>
+                        </p>
+                        <p>
+                            <label for="gender">Gender:</label>
+                            <select id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        <p>
+                            <input type="submit" value="send">
+                    </fieldset>
+                </form>
+            </div>
+        </aside>
+        <footer>
+        </footer>
+    </body>
+
+</html>
